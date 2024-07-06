@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Portal</title>
+    <link rel="stylesheet" href="apply.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="main">
+        <nav>
+            <h4>- British CoS -</h4>
+            <h1>APPLY</h1>
+            <hr>
+        </nav>
+        <header>
+            <h1>Welcome to British College of Science</h1>
+        </header>
+        <div class="image">
+            <p>Thank you for your interest in British College of Science. You can apply for the 2023-2024 cycle here, including Fall 2023, Winter 2024, Spring 2024, and Summer 2024. </p>
+            <p>To determine the exact deadline for your desired program, visit the <a href="">Application Dates & Deadlines</a> page.</p>
+            <p>Refer to the <a href="">Applicant Help Center</a> for additional information, including <a href="">browser requirements</a>. Here, you can chat with us for live support.</p>
+            <p>If you are seeking entrance for Fall 2024, the application and application link will be available beginning October 1st 6 am PST.
+            </p>
+        </div>
+        <div class="background">
+            <p>The information below will be provided to the admissions offices at the programs to which you apply. Please provide complete and accurate information. Within the application, you will be able to specify additional addresses and alternate name details.</p>
+            <p><span>*</span> indicates required filed</p>
+            <hr>
+            <form action="apply" method="post">
+                <h3>Your Legal Name</h3>
+                <label for="firstname"><span>*</span>First Name</label><br>
+                <input type="text" name="firstname" required id=firstname><br>
+                <label for="middlename"><span>*</span>Middle Name</label><br>
+                <input type="text" name="middlename" required id=middlename><br>
+                <label for="lastname"><span>*</span>Last Name</label><br>
+                <input type="text" name="lastname" required id=lastname><br>
+                <hr id="horizontal-rule">
+                <h3>Contact Information</h3>
+                <label for="mail"><span>*</span> Email Address</label><br>
+                <input type="email" name="mail" required id=mail><br>
+                <label for="contact">Phone Number</label><br>
+                <input type="tel" name="contact" id=contact><br>
+                <input type="date" id="date" name="date" required>
+                <hr id="horizontal-rule">
+                <h3>Course</h3>
+                <select name="course" id="course">
+                    <option value="select">Biochemistry and Biotechnology</option>
+                    <option>Food Science and Technology</option>
+                    <option>Optometry and Visual Science</option>
+                    <option>Computer Science</option>
+                    <option>Statistics and Actuarial Science</option>
+                    <option>Meteorology and Climate Science</option>
+                </select>
+                <input type="submit" id="logup" value="Register" onclick= "message()">
+            </form>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="navigate">
+            <h2>Navigation</h2>
+            <p><a class="navi-link" href="index.html">> Home</a></p>
+        </div>
+        <div class="address">
+            <h3>Address</h3>
+            <p>Provost Office</p>
+            <p>College of Science</p>
+            <p>British COS-New York</p>
+            <h3>Telephone</h3>
+            <p>+233-5993-00099</p>
+            <h3>College email address</h3>
+            <p>kwaejoseph2003@gmail.com</p>
+        </div>
+        <div class="copyright">
+            <p>© 2023 British College of Science, New York</p>
+        </div>
+    </section>
+    
+    
+    <script>
+    function message(){
+    	let firstname = document.getElementById('firstname');
+    	let middlename = document.getElementById('middlename');
+    	let lastname = document.getElementById('lastname');
+    	let mail = document.getElementById('mail');
+    	let contact = document.getElementById('contact');
+    	let date = document.getElementById('date');
+    	let course = document.getElementById('course');
+    	
+    	if(firstname.value === '' || middlename.value === '' || lastname.value === '' || mail.value === '' || contact.value === '' || date.value === ''){
+    		alert('Please fill all details');
+    	}else{
+    		alert('Registered successfully');
+    	}
+    	
+    }
+    
+    </script>
+</body>
+</html>

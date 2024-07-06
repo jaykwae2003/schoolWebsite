@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-bar{
+    background-color: white;
+    width: 100%;
+    position: relative;
+    height: 60px;
+    
+}
+.nav-bar nav{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+#nav-heading{
+    margin-left: 2%;
+    margin-right: 55%;
+    color: rgb(0, 89, 255);
+    font-size: 25px;
+}
+#loginbtn{
+    width: 60px;
+    background-color: rgb(0, 102, 255);
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+#loginbtn a{
+    color: white;
+    font-weight: bolder;
+}
+#loginbtn:hover{
+    background-color: rgb(33, 132, 224);
+    transition: 0.5s;
+}
+.body-sec{
+    background-color: rgba(154, 175, 189, 0.308);
+    width: 100%;
+    height: 390px;
+    border-top: 2px solid white transparent;
+    border-top-style: outset;
+}
+.form-div{
+    width: 100%;
+}
+.body-sec .form-div form{
+    background-color: white;
+    width: 90%;
+    height: 225px;
+    margin-left: 5%;
+    margin-top: 80px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+form h3{
+    width: 80%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+hr{
+    border: 1px solid rgb(219, 216, 216) ;
+    
+}
+.body-sec .form-div form p{
+    width: 90%;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 480;
+}
+#email_number{
+    width: 95%;
+    height: 45px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 1px solid  transparent;
+    font-family: Roboto-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    border-radius: 6px;
+    border-color: rgb(200, 206, 206);
+    outline: none;
+}
+#sec-hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.flex-btn{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.first-btn{
+    margin-left: 59%;
+    width: 80px;
+    background-color: rgba(208, 208, 211, 0.685);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+}
+.first-btn a{
+    color: black;
+    font-weight: 500;
+}
+.second-btn{
+    width: 80px;
+    height: 30px;
+    float: right;
+    margin-left: 2%;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgb(0, 102, 255);
+    font-weight: bold;
+    cursor: pointer;
+}
+.second-btn:hover{
+    background-color: rgb(33, 132, 224);
+    transition: 0.5s;
+}

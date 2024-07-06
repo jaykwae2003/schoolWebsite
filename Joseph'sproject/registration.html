@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <!-- <input type="hidden" id="status" value="<%= request.getAttribute("status")%>"> -->
+
+	 <section>
+        <nav>
+            <h4>- British CoS -</h4>
+            <h1>APPLY</h1>
+            <hr>
+        </nav>
+        <header>
+            <h1>Create an Account</h1>
+        </header>
+        <div class="background">
+            <p>The information below will be provided to the admissions offices at the programs to which you apply. Please provide complete and accurate information. Within the application, you will be able to specify additional addresses and alternate name details.</p>
+            <p><span>*</span> indicates required filed</p>
+            <hr>
+            <form action="register" method="post">
+                <h3>Your Legal Name</h3>
+                <label for="title">Title</label><br>
+                <input type="text" name="title" id="title"><br>
+                <label for="name"><span>*</span> Full Name</label><br>
+                <input type="text" name="name" id="name" required><br>
+                <hr id="horizontal-rule">
+                <h3>Contact Information</h3>
+                <label for="email"><span>*</span> Email Address</label><br>
+                <input type="email" name="email" id="email" required><br>
+                <label for="number">Phone Number</label><br>
+                <input type="tel" name="number" id="number"><br>
+                <label for="pass">Password</label><br>
+                <input type="password" name="pass" id="pass" placeholder="********" required><br>
+                <input type="submit" id="logup" value="Sign Up" onclick="message()">
+            </form>
+        </div>
+    </section>
+    
+ 
+ <script>
+ function message(){
+ 	let title = document.getElementById('title');
+ 	let name = document.getElementById('name');
+ 	let email = document.getElementById('email');
+ 	let number = document.getElementById('number');
+ 	let pass = document.getElementById('pass');
+ 	
+ 	
+ 	if(title.value === '' || name.value === '' || email.value === '' || number.value === '' || pass.value === '' || status.value == "success"){
+ 		alert('Please fill all details or Incorrect details');
+ 	}else{
+ 		alert('Account Successfully Created');
+ 	}
+ 	
+ }
+ 	
+   </script>
+</body>
+</html>
